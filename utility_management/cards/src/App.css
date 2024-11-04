@@ -1,0 +1,211 @@
+/* 
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  margin: 0 10px;
+  padding: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.highlighted {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+img{
+  height:150px;
+  width:250px;
+}
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b116c;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color:#2b116c;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+  height: 400px; 
+   border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+  background-color: rgba(0, 0, 0, 0.5); 
+} 
+
+.card img {
+  max-width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: white; 
+   
+}
+
+.card button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b116c;
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: auto; 
+}
+
+.card button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+ *{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  margin: 0 10px;
+  padding: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.highlighted {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.highlighted p{
+  color: #3795BD;
+  
+}
+
+img {
+  height: 150px;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b116c;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color: #2b116c;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+  height: 400px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+  background-color: rgba(0, 0, 0, 0.5); 
+} 
+
+.card img {
+  max-width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: white; 
+}
+
+.card button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b116c;
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: auto; 
+}
+
+.card button:hover {
+  background-color: #3795BD;
+}

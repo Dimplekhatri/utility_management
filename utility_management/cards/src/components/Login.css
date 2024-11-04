@@ -1,0 +1,257 @@
+ 
+.wrapper {
+  margin-top: 11rem;
+  margin-left: 33rem;
+  
+   
+  
+  flex:auto;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  background: transparent;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: height .2s ease;
+}
+
+.wrapper.active {
+  height: auto;
+}
+.form-box login{
+   
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .form-box {
+   
+  width: 100%;
+  padding: 20px;
+  background: #3A1078;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.wrapper .form-box.login {
+  transition: translate .18s ease;
+  transform: translateX(0);
+   justify-content: center;
+  align-items: center;
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box .register {
+  position: absolute;
+  transition: transform .18s ease;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box .register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+form h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+   
+}
+a{
+  color: whitesmoke;
+}
+
+label{
+  font-size: 16px;
+  color: whitesmoke;
+}
+h1{
+  color: white;
+}
+
+form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 1rem 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 5px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 0.25rem;
+}
+
+.remember-forgot .link {
+  padding-left: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot .link:hover {
+  color: #33b3b6;
+}
+
+form button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+
+form .register-link {
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 1rem 0 0.5rem;
+}
+
+.register-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p {
+  display: inline;
+}
+
+.register-link .account {
+  padding-left: 2rem;
+  color: #33b3b6;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.register-link .account:hover {
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .wrapper {
+      width: 90%;
+      height: auto;
+  }
+
+  .wrapper .form-box {
+      padding: 20px;
+  }
+
+  form h1 {
+      font-size: 1.5rem;
+  }
+
+  .input-box input {
+      font-size: 0.875rem;
+      padding: 0.5rem 1.5rem;
+  }
+
+  .input-box .icon {
+      font-size: 0.875rem;
+  }
+
+  form .remember-forgot {
+      font-size: 0.75rem;
+  }
+
+  form button {
+      font-size: 0.875rem;
+  }
+
+  form .register-link {
+      font-size: 0.75rem;
+  }
+
+  .register-link .account {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+      width: 95%;
+  }
+
+  .wrapper .form-box {
+      padding: 15px;
+  }
+
+  form h1 {
+      font-size: 1.25rem;
+  }
+
+  .input-box input {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .input-box .icon {
+      font-size: 0.75rem;
+  }
+
+  form .remember-forgot {
+      font-size: 0.65rem;
+  }
+
+  form button {
+      font-size: 0.75rem;
+  }
+
+  form .register-link {
+      font-size: 0.65rem;
+  }
+
+  .register-link .account {
+      font-size: 0.875rem;
+  }
+}
